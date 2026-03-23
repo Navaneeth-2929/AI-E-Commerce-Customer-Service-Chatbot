@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopAI Customer Support</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css', v=css_version) }}" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <button id="chat-launcher" class="chat-launcher" type="button" aria-label="Open ShopAI chatbot">
+        <span class="launcher-logo">SA</span>
+      </button>
+
+      <section id="chat-card" class="chat-card hidden-chat">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">AI CUSTOMER CARE</p>
+            <h1>ShopAI Support</h1>
+          </div>
+          <div class="header-actions">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              Online
+            </div>
+            <button id="close-chat" class="close-chat" type="button" aria-label="Close chatbot">&times;</button>
+          </div>
+        </header>
+
+        <section id="chat-window" class="chat-window"></section>
+
+        <div id="typing-indicator" class="typing-indicator hidden">
+          ShopAI is typing<span></span><span></span><span></span>
+        </div>
+
+        <section id="quick-replies" class="quick-replies"></section>
+
+        <form id="chat-form" class="chat-form">
+          <button id="back-button" class="secondary-button" type="button">Back</button>
+          <input id="message-input" type="text" placeholder="Ask about orders, returns, shipping..." autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <template id="message-template">
+      <article class="message">
+        <div class="bubble-wrap">
+          <p class="bubble-text"></p>
+          <div class="meta-row">
+            <span class="timestamp"></span>
+            <span class="sentiment-badge"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="{{ url_for('static', filename='app.js', v=js_version) }}"></script>
+  </body>
+</html>

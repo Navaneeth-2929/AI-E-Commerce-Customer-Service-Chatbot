@@ -1,0 +1,51 @@
+{
+  "fashion": {
+    "t-shirts": ["Graphic T-Shirts", "Polo T-Shirts", "Oversized T-Shirts", "Cotton T-Shirts", "Printed T-Shirts"],
+    "jeans": ["Slim Fit Jeans", "Regular Fit Jeans", "Baggy Jeans", "High Waist Jeans", "Ripped Jeans"],
+    "dresses": ["Casual Dresses", "Party Dresses", "Maxi Dresses", "Floral Dresses", "Bodycon Dresses"],
+    "sneakers": ["Running Sneakers", "Casual Sneakers", "High-Top Sneakers", "Canvas Sneakers", "Sports Sneakers"],
+    "jackets": ["Denim Jackets", "Leather Jackets", "Bomber Jackets", "Hooded Jackets", "Winter Jackets"]
+  },
+  "accessories": ["Bags", "Watches", "Sunglasses", "Belts", "Wallets"],
+  "electronics": {
+    "phones": {
+      "Apple": {
+        "iPhone 15": 799.0,
+        "iPhone 15 Pro": 999.0,
+        "iPhone 14": 699.0,
+        "iPhone SE": 429.0
+      },
+      "Samsung": {
+        "Galaxy S24": 859.0,
+        "Galaxy S24 Ultra": 1299.0,
+        "Galaxy A55": 499.0,
+        "Galaxy Z Flip 6": 1099.0
+      },
+      "OnePlus": {
+        "OnePlus 12": 799.0,
+        "OnePlus 12R": 599.0,
+        "Nord CE 4": 329.0
+      },
+      "Google": {
+        "Pixel 8": 699.0,
+        "Pixel 8 Pro": 999.0,
+        "Pixel 7a": 499.0
+      },
+      "Xiaomi": {
+        "Xiaomi 14": 749.0,
+        "Redmi Note 13 Pro": 329.0,
+        "Poco X6": 299.0
+      }
+    },
+    "laptops": ["MacBook Air", "Dell XPS 13", "HP Pavilion", "Lenovo IdeaPad", "Asus ROG"],
+    "headphones": ["Sony WH-1000XM5", "AirPods Pro", "JBL Tune 770NC", "Boat Rockerz 550"],
+    "smartwatches": ["Apple Watch SE", "Samsung Galaxy Watch 6", "Noise ColorFit Pro", "Amazfit GTR"],
+    "tablets": ["iPad Air", "Samsung Galaxy Tab S9", "Lenovo Tab P12", "Xiaomi Pad 6"]
+  },
+  "groceries": ["Rice", "Cooking Oil", "Coffee", "Snacks", "Milk"],
+  "books": ["Novels", "Self-Help Books", "Comics", "Academic Books", "Biographies"],
+  "home decor": ["Wall Art", "Lamps", "Curtains", "Cushions", "Rugs"],
+  "beauty": ["Lipstick", "Moisturizer", "Perfume", "Face Wash", "Shampoo"],
+  "toys": ["Action Figures", "Building Blocks", "Dolls", "Board Games", "Puzzles"],
+  "sports": ["Cricket Bat", "Football", "Yoga Mat", "Dumbbells", "Running Shoes"]
+}

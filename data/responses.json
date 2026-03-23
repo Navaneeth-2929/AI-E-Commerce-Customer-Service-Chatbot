@@ -1,0 +1,38 @@
+{
+  "greeting": {
+    "text": "Hello! I can help with orders, returns, shipping, payments, pricing, and product questions.",
+    "quick_replies": ["Track order", "Place order", "Returns policy"]
+  },
+  "goodbye": {
+    "text": "Goodbye. If you need anything else, support is available at +1-800-123-4567.",
+    "quick_replies": ["Track order", "Contact support"]
+  },
+  "returns": {
+    "text": "Most items can be returned within 30 days if they are unused and in original packaging.",
+    "quick_replies": ["Shipping info", "Contact support"]
+  },
+  "shipping": {
+    "text": "Standard shipping takes 3 to 5 business days, and express shipping takes 1 to 2 business days.",
+    "quick_replies": ["Track order", "Returns policy"]
+  },
+  "payments": {
+    "text": "We support major credit cards, debit cards, UPI, net banking, wallets, and EMI on eligible items.",
+    "quick_replies": ["Pricing", "Place order"]
+  },
+  "pricing": {
+    "text": "Prices update in real time based on promotions, stock, and seller offers. Share a product name for more details.",
+    "quick_replies": ["Product info", "Place order"]
+  },
+  "product_info": {
+    "text": "Share the product name and I can provide general availability, delivery, and purchase guidance.",
+    "quick_replies": ["Pricing", "Place order"]
+  },
+  "contact_support": {
+    "text": "You can reach customer support at +1-800-123-4567 or support@shopai.com.",
+    "quick_replies": ["Call support", "Email support"]
+  },
+  "fallback": {
+    "text": "I didn't fully understand that. You can ask me to track, cancel, or place an order, or ask about returns, shipping, payments, pricing, and support.",
+    "quick_replies": ["Track order", "Cancel order", "Contact support"]
+  }
+}

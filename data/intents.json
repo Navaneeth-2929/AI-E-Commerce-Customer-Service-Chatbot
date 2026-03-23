@@ -1,0 +1,62 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "patterns": ["\\b(hi|hello|hey|welcome|good morning|good evening|good afternoon)\\b"]
+    },
+    {
+      "name": "goodbye",
+      "patterns": ["\\b(bye|goodbye|see you|talk later)\\b"]
+    },
+    {
+      "name": "track_order",
+      "patterns": [
+        "\\b(track|where is|status of)\\b.*\\b(order|package|shipment)\\b",
+        "\\b(order|package)\\b.*\\b(track|status|arrive|delivery)\\b"
+      ]
+    },
+    {
+      "name": "cancel_order",
+      "patterns": [
+        "\\b(cancel|stop|void)\\b.*\\b(order|purchase)\\b",
+        "\\b(order|purchase)\\b.*\\b(cancel|stop)\\b"
+      ]
+    },
+    {
+      "name": "place_order",
+      "patterns": [
+        "\\b(place|create|make)\\b.*\\b(order)\\b",
+        "\\b(buy|purchase|get)\\b",
+        "\\b(fashion|clothing|accessories|bags|watches|jewelry|jewellery|electronics|gadgets|mobiles|laptops|appliances|groceries|books|home decor|furniture|beauty|toys|sports|phones|headphones|smartwatches|tablets|t-shirts|jeans|dresses|sneakers|jackets|sunglasses|belts|wallets|rice|cooking oil|coffee|snacks|milk|novels|self-help books|comics|academic books|biographies|wall art|lamps|curtains|cushions|rugs|lipstick|moisturizer|perfume|face wash|shampoo|action figures|building blocks|dolls|board games|puzzles|cricket bat|football|yoga mat|dumbbells|running shoes|apple|samsung|oneplus|google|xiaomi|iphone 15|iphone 15 pro|iphone 14|iphone se|galaxy s24|galaxy s24 ultra|galaxy a55|galaxy z flip 6|oneplus 12|oneplus 12r|nord ce 4|pixel 8|pixel 8 pro|pixel 7a|xiaomi 14|redmi note 13 pro|poco x6)\\b"
+      ]
+    },
+    {
+      "name": "returns",
+      "patterns": ["\\b(return|returns|refund|exchange|send back)\\b"]
+    },
+    {
+      "name": "shipping",
+      "patterns": ["\\b(shipping|delivery|ship|arrive|dispatch)\\b"]
+    },
+    {
+      "name": "payments",
+      "patterns": ["\\b(payment|pay|card|upi|wallet|emi|cash on delivery|cod)\\b"]
+    },
+    {
+      "name": "pricing",
+      "patterns": ["\\b(price|pricing|cost|discount|offer|deal)\\b"]
+    },
+    {
+      "name": "product_info",
+      "patterns": ["\\b(product|products|item|items|specification|details|features|availability)\\b"]
+    },
+    {
+      "name": "contact_support",
+      "patterns": ["\\b(contact|support|agent|human|representative|phone|email|help desk)\\b"]
+    },
+    {
+      "name": "fallback",
+      "patterns": ["\\b.*\\b"]
+    }
+  ]
+}
