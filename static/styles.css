@@ -23,7 +23,9 @@ body {
   min-height: 100vh;
   font-family: "Segoe UI", sans-serif;
   color: var(--text);
-  background: #ffffff;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.28)),
+    url("/static/background%20image.png") center center / cover no-repeat fixed;
   overflow: hidden;
 }
 
@@ -39,12 +41,19 @@ body::after {
   z-index: 1;
 }
 
-.app-shell::before,
-.app-shell::after {
+.app-shell::before {
   content: "";
   position: fixed;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   pointer-events: none;
   z-index: 0;
+}
+
+.app-shell::before,
+.app-shell::after {
+  pointer-events: none;
 }
 
 .chat-card {
@@ -55,7 +64,9 @@ body::after {
   height: min(78vh, 720px);
   display: grid;
   grid-template-rows: auto 1fr auto auto;
-  background: var(--panel);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)),
+    url("/static/chatbot%20background.png") center center / cover no-repeat;
   backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 28px;
@@ -75,24 +86,39 @@ body::after {
   position: fixed;
   right: 24px;
   bottom: 24px;
-  width: 64px;
-  height: 64px;
+  width: 82px;
+  height: 82px;
   border: 0;
   border-radius: 50%;
   background: linear-gradient(135deg, #0f766e, #115e59);
   color: white;
-  box-shadow: 0 20px 45px rgba(15, 118, 110, 0.35);
+  box-shadow:
+    0 18px 42px rgba(15, 118, 110, 0.38),
+    0 0 0 8px rgba(15, 118, 110, 0.12),
+    0 0 34px rgba(16, 185, 129, 0.35);
   cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .launcher-logo {
-  display: inline-grid;
-  place-items: center;
+  display: block;
   width: 100%;
   height: 100%;
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  object-fit: cover;
+}
+
+.chat-launcher:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow:
+    0 24px 54px rgba(15, 118, 110, 0.46),
+    0 0 0 10px rgba(15, 118, 110, 0.16),
+    0 0 44px rgba(16, 185, 129, 0.45);
+  filter: saturate(1.08);
+}
+
+.chat-launcher:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .chat-header {
@@ -157,6 +183,7 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background: transparent;
 }
 
 .message {
@@ -219,6 +246,7 @@ body::after {
   gap: 10px;
   padding: 0 24px 18px;
   overflow-x: auto;
+  background: transparent;
 }
 
 .quick-replies button {
@@ -237,6 +265,7 @@ body::after {
   grid-template-columns: auto 1fr auto;
   gap: 12px;
   padding: 0 24px 24px;
+  background: transparent;
 }
 
 .chat-form input {

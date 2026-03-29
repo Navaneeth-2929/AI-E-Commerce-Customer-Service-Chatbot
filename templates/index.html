@@ -9,7 +9,7 @@
   <body>
     <main class="app-shell">
       <button id="chat-launcher" class="chat-launcher" type="button" aria-label="Open ShopAI chatbot">
-        <span class="launcher-logo">SA</span>
+        <img class="launcher-logo" src="{{ url_for('static', filename='chatbot logo.png', v=js_version) }}" alt="ShopAI chatbot logo" />
       </button>
 
       <section id="chat-card" class="chat-card hidden-chat">
