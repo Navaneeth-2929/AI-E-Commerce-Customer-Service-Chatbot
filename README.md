@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI E-Commerce Customer Service Chatbot
 
 An AI-powered customer service chatbot for an Amazon-like e-commerce platform, built with Flask, Python, HTML, CSS, and JavaScript.
@@ -435,3 +436,4 @@ This project is a strong full-stack portfolio project because it demonstrates:
 This project is designed to be easy to understand, easy to demo, and easy to extend for internships, academic submissions, personal portfolios, and GitHub showcases.
 
 If you plan to push it to GitHub, this README is already structured to work well as a project landing page.
+=======
